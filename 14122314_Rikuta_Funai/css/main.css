@@ -1,0 +1,574 @@
+
+body {
+	padding: 5px 20px;
+	font-family: 'Hiragino Maru Gothic Pro','ヒラギノ丸ゴ Pro W4', sans-serif;
+  }
+
+  main{
+	text-align: center;
+  }
+
+h2 {
+	color: #505050;/*文字色*/
+	padding: 0.5em;/*文字周りの余白*/
+	display: inline-block;/*おまじない*/
+	line-height: 1.3;/*行高*/
+	background: #dbebf8;/*背景色*/
+	vertical-align: middle;
+	border-radius: 25px 0px 0px 25px;/*左側の角を丸く*/
+	margin: 10px 0px;
+  }
+  
+  h2:before {
+	content: '●';
+	color: white;
+	margin-right: 8px;
+  }
+
+.top-wrapper{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: lightblue;
+}
+
+.top-subtitle, .top-caption{
+    margin-top: 10px;
+}
+
+.link-wrapper{
+    display: flex;
+    justify-content: space-evenly;
+}
+li{
+    list-style:none;
+}
+
+img {
+    width: 50%;
+	height: 50%;  /* 横幅に合わせて自動縮小するが、拡大はしない */
+ }
+
+ .main-wrapper{
+    padding-left: 2%;
+    padding-right: 2%;
+ }
+ 
+#基本情報{
+	text-align: center;
+	position: relative;
+	margin-left: 30%;
+	margin-right: 30%;
+	margin-top: 20px;
+	padding: 20px;
+  	background: #e0edff;
+ }
+
+ #基本情報:after{
+	position: absolute;
+	content: '';
+	top: 100%;
+	left: 30px;
+	border: 15px solid transparent;
+	border-top: 15px solid #e0edff;
+	width: 0;
+	height: 0;
+ }
+
+ #今後の展望{
+	position: relative;
+	margin-top: 20px;
+	margin-bottom: 30px;
+	padding: 20px;
+  	background: #e0edff;
+ }
+
+ #今後の展望:after{
+	position: absolute;
+	content: '';
+	top: 100%;
+	left: 30px;
+	border: 15px solid transparent;
+	border-top: 15px solid #e0edff;
+	width: 0;
+	height: 0;
+ }
+
+ #コンタクト{
+	position: relative;
+	margin-top: 20px;
+	margin-bottom: 30px;
+	padding: 20px;
+  	background: #e0edff;
+ }
+
+ #コンタクト:after{
+	position: absolute;
+	content: '';
+	top: 100%;
+	left: 30px;
+	border: 15px solid transparent;
+	border-top: 15px solid #e0edff;
+	width: 0;
+	height: 0;
+ }
+
+ .A{
+    display: flex;
+    justify-content: center;
+	flex-wrap: wrap;
+ }
+
+ .menu{
+    margin: 20px 30px;
+ }
+
+ .menu li a{
+	background-color: #E0FFFF;
+	border: 1px solid #E0FFFF;
+}
+
+.menu li a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	width: 300px;
+	height: 60px;
+	color: #333;
+	font-size: 18px;
+	font-weight: 700;
+	text-decoration: none;
+	transition: 0.3s;
+	box-shadow: 10px 10px;
+}
+
+.menu li a:hover {
+	color: black;
+}
+
+.nemu li a::after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	right: 20px;
+	transform: rotate(45deg) translateY(-50%);
+	width: 6px;
+	height: 6px;
+	border-width: 2px 2px 0 0;
+	border-style: solid;
+	border-color: #333;
+}
+
+.menu li a:hover {
+	background-color: #AFEEEE;
+	border: 1px solid #333;
+}
+
+.menu li a:hover::after {
+	border-color: #f2f2f2 #f2f2f2 transparent transparent;
+}
+
+.B{
+	background-image: url(../images/disney-logo.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-color:rgba(255,255,255,0.5);
+	background-blend-mode:lighten;
+	background-position: center;
+}
+
+.container{
+	display: flex;
+  	flex-wrap: wrap;
+  	justify-content: space-around;
+}
+
+.item {
+	background-color: #E0FFFF;
+	padding: 10px 10px;
+	border: solid #AFEEEE;
+	border-width: 1px;
+	height: auto;
+	width: 20%;
+	margin: 10px 0px;
+  }
+
+.item h3{
+	margin-top:auto;
+}
+
+.item:hover{
+	background-color: #AFEEEE;
+}
+
+table{
+	width: 100%;
+	border-collapse:separate;
+	border-spacing: 0;
+  }
+  
+  table th:first-child{
+	border-radius: 5px 0 0 0;
+  }
+  
+  table th:last-child{
+	border-radius: 0 5px 0 0;
+	border-right: 1px solid #ffdd11;
+  }
+  
+  table th{
+	text-align: center;
+	color:black;
+	background: linear-gradient(#ffff00,#ffdd11);
+	border-left: 1px solid black;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	box-shadow: 0px 1px 1px rgba(255,255,255,0.3) inset;
+	width: 25%;
+	padding: 10px 0;
+  }
+  
+  table td{
+	text-align: center;
+	border-left: 1px solid #a8b7c5;
+	border-bottom: 1px solid #a8b7c5;
+	border-top:none;
+	box-shadow: 0px -3px 5px 1px #eee inset;
+	width: 25%;
+	padding: 10px 0;
+  }
+  
+  table td:last-child{
+	border-right: 1px solid #a8b7c5;
+  }
+  
+  table tr:last-child td:first-child {
+	border-radius: 0 0 0 5px;
+  }
+  
+  table tr:last-child td:last-child {
+	border-radius: 0 0 5px 0;
+  }
+
+
+.Ariel-content{
+	text-align: center;
+}
+
+.indy-content{
+	text-align: center;
+}
+.myele-content {
+	text-align: center;
+}
+
+.stitch {
+	color: #fff;
+	padding: 20px;
+	font-size: 22px;
+	background: #81e7f9;
+	border: 2px dashed #F7F9CC;
+	border-radius: 10px;
+	box-shadow: 0 0 0 7px #81e7f9;
+ }
+
+ .mybox{
+	border: 1px solid #ccc;	/* 線の太さ・種類・色 */
+	box-shadow:1px 1px 6px 0px #ccc;
+	padding: 50px 10px 10px 10px;	/* 内側の余白 上・右・下・左 */
+	position: relative;
+	z-index: -2
+}
+.mybox:before{
+	background-image: -webkit-gradient(radial, 30% 30%, 0, 30% 30%, 10, from(#ffe5ed), to(#e50044));	/* マップピンの色 */
+	border-radius: 50%;
+	box-shadow: .5px .5px 4px 1px rgba(128, 128, 128, 0.5);
+	content: '';
+	display: block;
+	position: absolute;
+	top: 5px;
+	left: 50%;
+	width: 15px;
+	height: 15px;
+	z-index: 0;
+}
+.mybox:after{
+	background-image: linear-gradient(-80deg, transparent 47%, #333333 47%, #333333 52%, transparent 52%, transparent);
+	content: '';
+	position: absolute;
+	top: 15px;
+	left: 50%;
+	width: 10px;
+	height: 13px;
+	z-index: -1;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Nixie+One);
+
+.ribbon {
+  font-family: 'Nixie One', cursive;
+  font-size: 20px;
+ width: 50%;
+    
+ position: relative;
+ background: #93dadf;
+ color: #fff;
+ text-align: center;
+ padding: 1em 2em; /* Adjust to suit */
+ margin: 2em auto 3em; /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */
+}
+.ribbon:before, .ribbon:after {
+ content: "";
+ position: absolute;
+ display: block;
+ bottom: -1em;
+ border: 1.5em solid #93dadf;
+ z-index: -1;
+}
+.ribbon:before {
+ left: -2em;
+ border-right-width: 1.5em;
+ border-left-color: transparent;
+}
+.ribbon:after {
+ right: -2em;
+ border-left-width: 1.5em;
+ border-right-color: transparent;
+}
+.ribbon-content:before, .ribbon-content:after {
+ content: "";
+ position: absolute;
+ display: block;
+ border-style: solid;
+ border-color: #7fcad4 transparent transparent transparent;
+ bottom: -1em;
+}
+.ribbon-content:before {
+ left: 0;
+ border-width: 1em 0 0 1em;
+}
+.ribbon-content:after {
+ right: 0;
+ border-width: 1em 1em 0 0;
+}
+
+.stetch{
+  background: #dfefff;
+  box-shadow: 0px 0px 0px 5px #dfefff;
+  border: dashed 1px #96c2fe;
+  padding: 0.2em 0.1em;
+  margin-bottom: 10px;
+  color: #454545;
+}
+
+.arround {
+	margin-top: 20px;
+	position: relative;
+	padding: 0.5em 1em;
+	border: solid 2px black;
+	border-radius: 3px 0 3px 0;
+  }
+  
+  .arround:before, .arround:after {
+	content: '';
+	position: absolute;
+	width:10px;
+	height: 10px;
+	border: solid 2px black;
+	border-radius: 50%;
+  }
+  
+  .arround:after {
+	top:-12px;
+	left:-12px;
+  }
+
+  .arround:before {
+	bottom:-12px;
+	right:-12px;
+  }
+
+  .arround2 {
+	position: relative;
+	padding: 0.25em 1em;
+	border-top: solid 2px black;
+	border-bottom: solid 2px black;
+  }
+  .arround2:before, .arround2:after {
+	content: '';
+	position: absolute;
+	top: -7px;
+	width: 2px;
+	height: -webkit-calc(100% + 14px);
+	height: calc(100% + 14px);
+	background-color: black;
+  }
+  .arround2:before {
+	left: 7px;
+  }
+  .arround2:after {
+	right: 7px;
+  }
+
+  .s1{
+	padding: 0.5em;
+	margin-right: 74%;
+	background: aliceblue;
+	box-shadow: 0 0 4px rgba(0, 0, 0, 0.23);
+	}
+
+/* 021 */
+.button021 a {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 240px;
+    padding: 10px 25px;
+    color: #313131;
+    transition: 0.3s ease-in-out;
+    font-weight: 500;
+}
+
+.button021 a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(107,182,255, 0.2);
+  transition: all 0.3s;
+}
+.button021 a:hover::before {
+  opacity: 0;
+  transform: scale(0.4, 0.4);
+}
+.button021 a::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.3s;
+  border: 2px solid rgb(107,182,255, .4);
+  transform: scale(1.2, 1.2);
+}
+.button021 a:hover::after {
+  opacity: 1;
+  transform: scale(1, 1);
+}
+
+.statch{
+	color: #364e96;/*文字色*/
+  padding: 0.5em 0;/*上下の余白*/
+  border-top: solid 3px #364e96;/*上線*/
+  border-bottom: solid 3px #364e96;/*下線*/
+}
+
+.element {
+	/* 最初は非表示 */
+	opacity: 0;
+	visibility: hidden;
+	transform: translateY(30px);
+	transition: opacity 1s, visibility 1s, transform 1s;
+  }
+
+  .element1 {
+	/* 最初は非表示 */
+	opacity: 0;
+	visibility: hidden;
+	transform: translateX(100px);
+	transition: opacity 1s, visibility 1s, transform 1s;
+  }
+
+  /* フェードイン時に入るクラス */
+  .is-fadein {
+	opacity: 1;
+	visibility: visible;
+	transform: translateX(0);
+  }
+
+  .is-fadein1 {
+	opacity: 1;
+	visibility: visible;
+	transform: translateX(0);
+  }
+
+  .anim-box {
+	background: linear-gradient(to right, #362ae0 0%,#3b79cc 50%,#42d3ed 100%);
+	border-radius: 5px;
+	max-width: 400px;
+	height: 250px;
+  }
+
+  .fuwafuwa {
+	animation: fuwafuwa 3s infinite ease-in-out .8s alternate;
+	background: url(../img/ico-apple.svg) no-repeat center center / 60px auto;
+	display: inline-block;
+	transition: 1.5s ease-in-out;
+	margin-top: 15px;
+  }
+   
+  @keyframes fuwafuwa {
+	0% {
+	  transform:translate(0, 0) rotate(-2deg);
+	}
+	50% {
+	  transform:translate(0, -2px) rotate(0deg);
+	}
+	100% {
+	  transform:translate(0, 0) rotate(2deg);
+	}
+  }
+
+ .s2 {
+	position: relative;
+	padding: 1.5rem 2.5rem;
+	border: 4px solid #000;
+  }
+  
+  .s2:before {
+	position: absolute;
+	top: 4px;
+	left: 4px;
+	width: calc(100% - 8px);
+	height: calc(100% - 8px);
+	content: '';
+	border: 4px dotted #000;
+  }
+
+.s3{
+	padding: 1rem 2rem;
+  border-top: 3px dashed #000;
+  border-bottom: 3px dashed #000;
+}
+
+.s4{
+	padding: 1rem 2rem;
+	border-top: 6px double #000;
+	border-bottom: 6px double #000;
+}
+
+nav{ display: none; }
+
+.nav-open{
+	padding: 15px;
+	color: #fff;
+	font-size: 20px;
+	background: #2073c8;
+	position: relative;
+}
+.nav-open::before{/* 閉じている時 */
+	content: "+";
+	position: absolute;
+	right: 20px;
+}
+.nav-open.active::before{/* 開いている時 */
+	content: "-";
+}
